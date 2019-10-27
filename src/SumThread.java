@@ -1,9 +1,12 @@
 
 public class SumThread extends Thread implements Runnable{
 
+	private int sum;
+	private int [] arrNumber;
+	
 	public SumThread(int [] arraySum) {
 		
-		arrNumber = arraySum;
+		this.arrNumber = arraySum;
 		
 		
 	}
@@ -21,6 +24,5 @@ public class SumThread extends Thread implements Runnable{
 		return sum;
 	}
 	
-	private int sum;
-	private int [] arrNumber;
+	
 }
